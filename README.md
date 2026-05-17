@@ -1,9 +1,9 @@
 # Kriftik Portfolio
 Hallo,
 My personal Roblox development portfolio.
+© 2026 Kriftik
 
-## Copyright
-© 2026 Kriftik. All Rights Reserved.
+**License**: [Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)](https://creativecommons.org/licenses/by-nc/4.0/)
 
-This portfolio's design and code are proprietary. 
-Please do not copy or use this as a template.
+This portfolio design, code, and assets are protected.  
+Please do not copy or use this as a base for your own portfolio.

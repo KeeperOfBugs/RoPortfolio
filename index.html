@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>ROBLOX - Profile</title>
+  <link rel="shortcut icon" href="/RoPortfolio/assets/logo-CC4mFLox.png" type="image/x-icon">
+  <link href='https://fonts.googleapis.com/css?family=Fredoka One' rel='stylesheet'>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script type="module" crossorigin src="/RoPortfolio/assets/index-pNSLIYmh.js"></script>
+  <link rel="stylesheet" crossorigin href="/RoPortfolio/assets/index-DIzv2HfK.css">
+</head>
+
+<body>
+  <div id="click-to-enter">
+    <p>Click to enter</p>
+  </div>
+
+  <!-- ---------- WINDOWS TEMPLATE SECTION -->
+  <div id="win7-window-template" class="win7-window" style="display:none">
+    <!-- Title bar (drag handle + buttons) -->
+    <div class="win7-titlebar">
+      <div class="win7-title-text"><img src="/RoPortfolio/assets/Roblox-circle-logo-CrV4uD-4.svg" alt="" class="roblox-logo-img">Roblox
+        Player</div>
+      <div class="win7-controls">
+        <button class="win7-btn win7-hide-btn" data-normal="img/hide_button.png" data-hover="img/hide_button_hover.png">
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEIAAAAhCAYAAABtNH0cAAAAAXNSR0IB2cksfwAAAARnQU1BAACxjwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAZiS0dEAM4A4wDzIHYgmgAAAAlwSFlzAAAuIwAALiMBeKU/dgAAAAd0SU1FB+oFBQ4FGZe3nIkAAASlSURBVGje7ZpLjxtFFIW/W1Vtt98eezITmITHIgEUZQWrCAGR+APsiBAbdizJD0H5D0igbBBbWCAlgBQhVkQEkiwQUpRk5Hhm/G63u6tYdI/tmQSQupNNk2uVeuOWb50+9557qi2kceXqj2eD6fSDxSIkiiKccxQ1jPEwxlCpVm9/dumdbwAkAeGHzmB/78ZBv39mNp0SBgHW2kKCICKUfJ+y79Pudl270718+dK7V+TzL695/d2H31bK+mKr5lPxy5TLHlrrQgJhrWUeLgjmIcNxwGAc0N3a/tTMJpOP+73exZd3tnhpZ4utE11azSalkldIIOI4ZjAYsrc/4NadP3m0u4tfrb1nnHNVG0eUSx6djTZ+pcJsYZlFYTEbhHN4ZZ/NrqLi3yeOI5yNMeCUtQ5jDLVaDc/zGc5CoriYPUIJNKolqn4Jz/Ow1uIcGEAlLTMFbG0VkhBPbKBgJAlWYLh/uaUQupHuTRBZLQUongdGRJQ8oSyKXBrr+5N0mfWi+K9aKhIQx8vFIKIQSToG4JD0y1JgIGQFyPMecVxWU9VIPv+HkOV1XTVMyooVbdxqZR/enqUEy9I8ZSsN9/geBQyIAlhEEdNgjgst/WFAGMWZU52OBkxHQ2aTEcFkjHsKTtav1fFrDaqNJtV6E5XRFGoluLiC9Q2LKFpCuxyoYusI5gsWLmYwmhCEUeak+w/u039wj2B0wHwyfCpAlGpNyvUmnZM7bL5wGm2ymUKjFWUNJSkTRXZVGhyTTzl2zRLBZMJB7yFnXj3N+XMXqFb83Nb55q27/PrbXaq1Jm7bZs5P/nGgSktD0pl7eZXsUCzmAePBAZ32G7z15nk22q3c1rnX63NjOGAezHL1iMNJYW1igOPN8kg3VdmBOEwyCAL29/axcZQTCMt0NgPnkg2oHPkdQeDIiJ3knfyAQqFQWqNylLWoRIoXiwWT6QStJTcQYThPrJIolNKZm6VSglIKUSrtD6n7PByoRAQtAqLxjMG67MkrpQDBOYezNvf5Z3Jm4JYb8UySY1bVMFonYKTMOKIaohImoDTaGEyOgdOv1qi12kxmIXfu/oXvl3IC4TgYTqk1W/i1OqZUwnheZiC0MQmrlqyQ1RxxCIbWGqN1LkY0Wm1O7Jxib7jP9Z9+wdmYvFGut+i+eIrmRoeS52FyzBHrICxNV2LDU+OhFCiNMQZLdjq3Ol0EGA/2GQ8OsHF+IOqtNvX2Bs2NDl6pnPmUXStBa7ViA4eMSE2GiKBStdBao3MwotXp0mhvJLX9lN6PLMv3saeZAQilkr3K6kAiYcSa+Uh+LEEta+S599m7TFLVSB76muk6CoRKGWELejSzBCKtgiUQSpQY4xFHMePxmHpDaJQ9UAU9pnAO4pDRLCBaRBjjoZTCGM843/eJrWUwGKKUUK/X8VRx33SNZxNGwxGLKMavVPA8by5ffHdze6/fvxaHwWtEYdIs08mrmIRw2DhOhjxdAu3d62xuXhCAr77//XS/17v+aPfhK0EQEMe20H8L0FrjeYYT2yf7m9vbb3/0/rk/lhp09drts/Mg+CSO4kKDcCjFSgllv/L1hxdf/xngb1EawodgIUTSAAAAAElFTkSuQmCC" alt="Minimize" draggable="false">
+        </button>
+        <button class="win7-btn win7-full-btn" data-normal="img/full_button.png" data-hover="img/full_button_hover.png">
+          <img src="data:image/png;base64,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" alt="Maximize" draggable="false">
+        </button>
+        <button class="win7-btn win7-fullon-btn" data-normal="img/full_button.png"
+          data-hover="img/full_button_hover.png" style="display: none;">
+          <img src="data:image/png;base64,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" alt="Minimize" draggable="false">
+        </button>
+        <button class="win7-btn win7-exit-btn" data-normal="img/exit_button.png" data-hover="img/exit_button_hover.png">
+          <img src="data:image/png;base64,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" alt="Close" draggable="false">
+        </button>
+      </div>
+    </div>
+    <!-- -------- CONTENT AREA OF WINDOW -->
+    <div class="win7-content">
+      <span class="win7-hello">
+        <p class="win7-bricks">Bricks: 0 </p>
+        <p class="win7-connectors">Connectors: 0</p>
+      </span>
+      <iframe class="video-wrapper" frameborder="0" src="about:blank"></iframe>
+    </div>
+  </div>
+
+  <!-- ----------- CUSTOM CURSOR OVERLAY ------------- -->
+  <div id="custom-cursor">
+    <img id="cursor-img" src="/RoPortfolio/assets/cursors-m5vNj_NO.png" alt="" />
+    <div id="cursor-spawn-ring"></div>
+  </div>
+
+  <!-- ------------------- HEADER BANNER -->
+  <header id="header">
+    <div id="header-inner">
+      <img src="/RoPortfolio/assets/roblox-banner-DARrooOr.png" alt="ROBLOX Banner" id="banner-img" />
+    </div>
+  </header>
+
+  <!-- -------- NAVIGATION BAR -->
+  <nav id="main-nav">
+    <ul>
+      <li class="auto-nav"></li>
+      <li><button id="about-me-btn" class="playHover playClick">About Me</button></li>
+      <li><button id="my-work-btn" class="playHover playClick">My Work</button></li>
+      <li><button id="code-examples-btn" class="playHover playClick">Code Examples</button></li>
+      <li><button id="questions-btn" class="playHover playClick">Questions &
+          Answers</button></li>
+      <li class="auto-nav"></li>
+    </ul>
+  </nav>
+
+  <!-- ---------- MAIN CONTENT -->
+  <div id="page-wrapper">
+
+    <!---------- PROFILE SECTION -->
+    <section id="profile-section">
+      <div id="about-me-box">
+        <h2>Hi, im Kriftik!</h2>
+        <p>Im a <strong>fullstack</strong> roblox scripter, i have experience with <strong>OOP</strong>,
+          <strong>Scalable
+            systems</strong>, <strong>Exploit protection</strong>, <strong>Profile Store </strong> and
+          <strong>Networking</strong>,
+          developing for <strong>3+ years</strong>.I think that communication is key to success and try my best to be part of the team. In my
+          free time i like 
+          playing lore-rich games such as <strong>Deepwoken</strong> and reading novels!
+          <sub>Thank you for reading this</sub>
+        </p>
+      </div>
+      <div id="avatar-box">
+        <img src="/RoPortfolio/assets/me_scaled-LWr2wH9U.png" alt="My Avatar" id="avatar-img" />
+      </div>
+    </section>
+
+
+    <!-- -------- GAME SECTION -->
+    <section id="games-section">
+      <div id="games-header">
+        <div id="games-tabs">
+          <button class="tab-btn active" id="all">All</button>
+          <button class="tab-btn" id="game">Games</button>
+          <button class="tab-btn" id="system">Systems</button>
+          <button class="tab-btn" id="asym">Asym</button>
+          <button class="tab-btn" id="simple">Simple</button>
+          <button class="tab-btn" id="ui">UI</button>
+        </div>
+        <div id="games-search">
+          <input type="text" placeholder="Search" id="search-input" class="playHover" />
+          <button id="search-btn" class="playHover playClick">🔍</button>
+        </div>
+      </div>
+
+      <!-- --------- GRID, WORD SIPLAYED HERE -->
+      <div id="games-grid">
+
+      </div>
+      <div id="pages">
+        <button id="prevpage" class="playHover playClick"></button>
+        <h1 id="currentpage">1 of 3</h1>
+        <button id="nextpage" class="playHover playClick"></button>
+      </div>
+
+  </div>
+
+  </section><!-- ------------- GAME SECTION END -->
+
+  <section id="code-example"><!-- -------------- EXAMPLES OF CODE -->
+    <div id="code-header">
+      <span id="code-title">Examples of code</span>
+    </div>
+    <div class="code-showcase-wrapper">
+      <div id="code-showcase-container">
+        <div class="code-editor-header">
+          <div class="code-editor-tabs">
+            <div class="code-editor-tab active playHover playClick" data-tab="uieffects">
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAADY0lEQVRoge2YTWhcVRTHf/+XSdIqBrTQRcXGSsVAbasbyUKtEQlUceMimyaKUFpGULoRugiULIS2grqRNhH8oImICi5ElIoYWl10oWC1ggFBpKIUK0pLTJrk/eWlacx05jXzPuYL8lvNu+983DP3nHvevbDGGplQ3Ivxot8Q7KUBhCF9Q6OaTB3A+HPuxkwJOqg/X+85pgerFQ4qjprhBk2eMGQ4iXzZCkwUfavN7xKd1Bmbc4PHdW8SnfIVCBloxOQXEW+TkELZiNh9A/nvbL6QmEvqyKYdeExiR5xMID7NHIDF5pit6ZtNG+ntG9E8KRnd5/ab2zgjuL/S++kZfk1qs1IRb4qRncwy+Yj9Y5rDfBnz+tLeN3UpjwCipS7H9L/1jNeRgUhfor+yeRKnZeUaiENs71jP9xNFnwLSrEQB8zCwNYVuDgFEaNH51vz7fnoqN7IWIqDFCWhxCtUK2ouFe0DmJAELSR0FAYVwnn6LV6WEtXcDkhh6d/C4XicbUxNFPwAMUfcUEv/m5DMvOwlXwDw9UfQnlxf4bLGjpviMuClgt+E+wYEw4HQQ8rdFlxbYpoDHyWNnHi/6ouA28saEFsMdf3J04AMlrqE4ciumVREvDh7TK626jf4wtZHXamE4oB6Yl0ZGFC4/2ttsn7Y9bftn24NNG4DNbHv4/0HFduTzQyA6uK8H7gLesR170GlYIwtNeyAuDIzpnxXDdwM914kGwBPAWZq8kUVsjxnf0SqNrCtm/JambWQzM+7p7KSXq3dND8WIbbG9b+n3X8DnUknq1aeRhSFPDY3qo2vP87N+tq3AGEHinvMb0CvpfKIUUtyZuEoKBc6V2GtjJMXkI24HXmAVSgI48by70ubiNQyXSxy0cUcGc5sTBaCQblqMwsoHhem+CFfh4IqUeBK4M4HuTtuHuXrlEqXmpKQ/VgqU5qbZk/fNgaQjy+btKJhvgXuqVO+5runN2B6Q9HFZCo0X3Rfd/VBDJE0D72cwsQ5Y/kNKa8Acoj5cyKi/pSyAE/v9iMQu6kPc3Wu1/ESjsL3B9i9Oz0Xbu2p82Vc26cNLfqKlfxTYkED9bPQRGd28Az8CZySV9Jma42y81wwnsisZdOeaIYCvMuieotHY7rZ90vZswmJ9een4ucYa1JD/AKD9wEvHCgINAAAAAElFTkSuQmCC" alt="Module Script Icon" class="script-icon">
+              <span class="tab-title">UIEffects</span>
+            </div>
+            <div class="code-editor-tab playHover playClick" data-tab="skinsshop">
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAACE0lEQVRoge2ZT4rUQBjF3yvTe1vEhUJXixtF0K0LHXv0CjoewJWeQUHQM7jyACLiEeYv7nqjILqadNHQS5mF6EK6ngTGhWOSTroyk2rND7JIVX2p7yWVeqkK0NERBBc1SNN0ZIzZQjxsW2vXf5+YRa1JPkNE8Eg+pQLSNF0neRvxsDUYDHYqCzDGPEFESHpR+R2YTqfXvPcfEAmSPg6Hw+tHywufwHw+30BEkHyTV142hNYQF7t1BVxGRPR6vS955UlRAMnTZReUtEvyHYAfocmRTLz3ayQfFLWZzWYHubFFAc45FdVJGltrb5Cco0Gcc68APMyrs9bm5rrQyPIgudN08hne+03UZCkBAEaSTqFhjDF368YsNYQyJO0dvgPf63b6VxJkImkE4H5Rm6IhlAR0egtAdgQjld6rYxlC0WCw4hisOMmygSdtZI0KODSyOw17wUvn3LciIyuiM7ImMZ2R1aAzsoYwWHEMVpykJSM7K+kxyQsIpDUjc869BpCtc3sIoDUjs9buS0oRSGsrMufcJZIXEUgrKzJJ5wA8Inm+akxUKzJy4a7+/zONmrzC8XgcNDMcAz9rCej3+2cQF19rCTDGXEFcfK4rINujiQZJ27UESLqHiCD5trKAyWSSfSJcRTxsWms/VRZA8ikiwnv/vKz+D0dxzt0EsId4eG+tzXJC1SdQqvak8d5H9Ze045/kF8tYzMCDLkmqAAAAAElFTkSuQmCC" alt="Script Icon" class="script-icon">
+              <span class="tab-title">SkinsShop</span>
+            </div>
+            <div class="code-editor-tab playHover playClick" data-tab="roundmanager">
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAACE0lEQVRoge2ZT4rUQBjF3yvTe1vEhUJXixtF0K0LHXv0CjoewJWeQUHQM7jyACLiEeYv7nqjILqadNHQS5mF6EK6ngTGhWOSTroyk2rND7JIVX2p7yWVeqkK0NERBBc1SNN0ZIzZQjxsW2vXf5+YRa1JPkNE8Eg+pQLSNF0neRvxsDUYDHYqCzDGPEFESHpR+R2YTqfXvPcfEAmSPg6Hw+tHywufwHw+30BEkHyTV142hNYQF7t1BVxGRPR6vS955UlRAMnTZReUtEvyHYAfocmRTLz3ayQfFLWZzWYHubFFAc45FdVJGltrb5Cco0Gcc68APMyrs9bm5rrQyPIgudN08hne+03UZCkBAEaSTqFhjDF368YsNYQyJO0dvgPf63b6VxJkImkE4H5Rm6IhlAR0egtAdgQjld6rYxlC0WCw4hisOMmygSdtZI0KODSyOw17wUvn3LciIyuiM7ImMZ2R1aAzsoYwWHEMVpykJSM7K+kxyQsIpDUjc869BpCtc3sIoDUjs9buS0oRSGsrMufcJZIXEUgrKzJJ5wA8Inm+akxUKzJy4a7+/zONmrzC8XgcNDMcAz9rCej3+2cQF19rCTDGXEFcfK4rINujiQZJ27UESLqHiCD5trKAyWSSfSJcRTxsWms/VRZA8ikiwnv/vKz+D0dxzt0EsId4eG+tzXJC1SdQqvak8d5H9Ze045/kF8tYzMCDLkmqAAAAAElFTkSuQmCC" alt="Script Icon" class="script-icon">
+              <span class="tab-title">RoundManager</span>
+            </div>
+          </div>
+          <div class="code-editor-lang-badge">lua</div>
+        </div>
+        <div class="code-viewport">
+          <div class="code-container" id="tab-uieffects">
+            <div class="code-line"><span class="comment">-- !strict</span></div>
+            <div class="code-line"><span class="comment">-- UIEffects -&gt; easy hover/click effects for UI</span></div>
+            <div class="code-line"><span class="comment">-- Every effect function returns a cleanup method</span></div>
+            <div class="code-line"></div>
+            <div class="code-line"><span class="keyword">local</span> TweenService = <span class="builtin">game</span>:<span class="method">GetService</span>(<span class="string">"TweenService"</span>)</div>
+            <div class="code-line"></div>
+            <div class="code-line"><span class="keyword">local</span> UIEffects = {}</div>
+            <div class="code-line"></div>
+            <div class="code-line"><span class="comment">------- Variable type for config</span></div>
+            <div class="code-line"><span class="keyword">export</span> <span class="keyword">type</span> <span class="type">EffectConfig</span> = {</div>
+            <div class="code-line">	duration: <span class="type">number</span>?,</div>
+            <div class="code-line">	easingStyle: <span class="type">Enum.EasingStyle</span>?,</div>
+            <div class="code-line">	easingDirection: <span class="type">Enum.EasingDirection</span>?,</div>
+            <div class="code-line">}</div>
+            <div class="code-line"></div>
+            <div class="code-line"><span class="comment">----------- CONFIG --------</span></div>
+            <div class="code-line"><span class="keyword">local</span> DEFAULT_DURATION = <span class="number">0.15</span></div>
+            <div class="code-line"><span class="keyword">local</span> DEFAULT_STYLE = <span class="builtin">Enum</span>.EasingStyle.Quad</div>
+            <div class="code-line"><span class="keyword">local</span> DEFAULT_DIRECTION = <span class="builtin">Enum</span>.EasingDirection.Out</div>
+            <div class="code-line"><span class="comment">--------------------------------</span></div>
+            <div class="code-line"></div>
+            <div class="code-line"><span class="keyword">local</span> <span class="keyword">function</span> <span class="method">buildInfo</span>(config: <span class="type">EffectConfig</span>?): <span class="type">TweenInfo</span></div>
+            <div class="code-line">	<span class="keyword">local</span> c = config <span class="keyword">or</span> {}</div>
+            <div class="code-line">	<span class="keyword">return</span> <span class="type">TweenInfo</span>.new(</div>
+            <div class="code-line">		c.duration <span class="keyword">or</span> DEFAULT_DURATION,</div>
+            <div class="code-line">		c.easingStyle <span class="keyword">or</span> DEFAULT_STYLE,</div>
+            <div class="code-line">		c.easingDirection <span class="keyword">or</span> DEFAULT_DIRECTION</div>
+            <div class="code-line">	)</div>
+            <div class="code-line"><span class="keyword">end</span></div>
+            <div class="code-line"></div>
+            <div class="code-line"><span class="comment">-- Array for tracking current tweens, this helps prevent overlapping</span></div>
+            <div class="code-line"><span class="keyword">local</span> activeTweens: { [<span class="type">GuiObject</span>]: <span class="type">Tween</span> } = {}</div>
+            <div class="code-line"></div>
+            <div class="code-line"><span class="keyword">local</span> <span class="keyword">function</span> <span class="method">playTween</span>(element: <span class="type">GuiObject</span>, info: <span class="type">TweenInfo</span>, goal: { [<span class="type">string</span>]: <span class="type">any</span> })</div>
+            <div class="code-line">	<span class="keyword">local</span> existing = activeTweens[element]</div>
+            <div class="code-line">	<span class="keyword">if</span> existing <span class="keyword">then</span></div>
+            <div class="code-line">		existing:<span class="method">Cancel</span>()</div>
+            <div class="code-line">	<span class="keyword">end</span></div>
+            <div class="code-line">	<span class="keyword">local</span> tween = TweenService:<span class="method">Create</span>(element, info, goal)</div>
+            <div class="code-line">	activeTweens[element] = tween</div>
+            <div class="code-line">	tween:<span class="method">Play</span>()</div>
+            <div class="code-line"><span class="keyword">end</span></div>
+            <div class="code-line"></div>
+            <div class="code-line"><span class="comment">-- Builder for function that disposing of connections</span></div>
+            <div class="code-line"><span class="keyword">local</span> <span class="keyword">function</span> <span class="method">bindHover</span>(element: <span class="type">GuiObject</span>, onEnter: () -&gt; (), onLeave: () -&gt; ())</div>
+            <div class="code-line">	<span class="keyword">local</span> enterConn = element.MouseEnter:<span class="method">Connect</span>(onEnter)</div>
+            <div class="code-line">	<span class="keyword">local</span> leaveConn = element.MouseLeave:<span class="method">Connect</span>(onLeave)</div>
+            <div class="code-line">	<span class="keyword">local</span> destroyConn = element.Destroying:<span class="method">Connect</span>(<span class="keyword">function</span>()</div>
+            <div class="code-line">		activeTweens[element] = <span class="keyword">nil</span></div>
+            <div class="code-line">	<span class="keyword">end</span>)</div>
+            <div class="code-line">	<span class="keyword">return</span> <span class="keyword">function</span>()</div>
+            <div class="code-line">		enterConn:<span class="method">Disconnect</span>()</div>
+            <div class="code-line">		leaveConn:<span class="method">Disconnect</span>()</div>
+            <div class="code-line">		destroyConn:<span class="method">Disconnect</span>()</div>
+            <div class="code-line">		activeTweens[element] = <span class="keyword">nil</span></div>
+            <div class="code-line">	<span class="keyword">end</span></div>
+            <div class="code-line"><span class="keyword">end</span></div>
+            <div class="code-line"></div>
+            <div class="code-line"><span class="comment">--- Tween BackgroundColor3 on hover</span></div>
+            <div class="code-line"><span class="keyword">function</span> UIEffects.<span class="method">colorChange</span>(</div>
+            <div class="code-line">	element: <span class="type">GuiObject</span>,</div>
+            <div class="code-line">	hoverColor: <span class="type">Color3</span>,</div>
+            <div class="code-line">	config: <span class="type">EffectConfig</span>?</div>
+            <div class="code-line">)</div>
+            <div class="code-line">	<span class="keyword">local</span> info = <span class="method">buildInfo</span>(config)</div>
+            <div class="code-line">	<span class="keyword">local</span> original = element.BackgroundColor3</div>
+            <div class="code-line">	<span class="keyword">return</span> <span class="method">bindHover</span>(element,</div>
+            <div class="code-line">		<span class="keyword">function</span>() <span class="method">playTween</span>(element, info, { BackgroundColor3 = hoverColor }) <span class="keyword">end</span>,</div>
+            <div class="code-line">		<span class="keyword">function</span>() <span class="method">playTween</span>(element, info, { BackgroundColor3 = original }) <span class="keyword">end</span></div>
+            <div class="code-line">	)</div>
+            <div class="code-line"><span class="keyword">end</span></div>
+            <div class="code-line"></div>
+            <div class="code-line"><span class="comment">--- Scale the element on hover, scales both Scale and Offset of ui</span></div>
+            <div class="code-line"><span class="keyword">function</span> UIEffects.<span class="method">scale</span>(</div>
+            <div class="code-line">	element: <span class="type">GuiObject</span>,</div>
+            <div class="code-line">	factor: <span class="type">number</span>,</div>
+            <div class="code-line">	config: <span class="type">EffectConfig</span>?</div>
+            <div class="code-line">)</div>
+            <div class="code-line">	<span class="keyword">local</span> info = <span class="method">buildInfo</span>(config)</div>
+            <div class="code-line">	<span class="keyword">local</span> original = element.Size</div>
+            <div class="code-line">	<span class="keyword">local</span> hovered = <span class="type">UDim2</span>.new(</div>
+            <div class="code-line">		original.X.Scale * factor, original.X.Offset * factor,</div>
+            <div class="code-line">		original.Y.Scale * factor, original.Y.Offset * factor</div>
+            <div class="code-line">	)</div>
+            <div class="code-line">	<span class="keyword">return</span> <span class="method">bindHover</span>(element,</div>
+            <div class="code-line">		<span class="keyword">function</span>() <span class="method">playTween</span>(element, info, { Size = hovered }) <span class="keyword">end</span>,</div>
+            <div class="code-line">		<span class="keyword">function</span>() <span class="method">playTween</span>(element, info, { Size = original }) <span class="keyword">end</span></div>
+            <div class="code-line">	)</div>
+            <div class="code-line"><span class="keyword">end</span></div>
+            <div class="code-line"></div>
+            <div class="code-line"><span class="comment">--- Fade Background Transparency on hover</span></div>
+            <div class="code-line"><span class="keyword">function</span> UIEffects.<span class="method">fade</span>(</div>
+            <div class="code-line">	element: <span class="type">GuiObject</span>,</div>
+            <div class="code-line">	hoverTransparency: <span class="type">number</span>,</div>
+            <div class="code-line">	config: <span class="type">EffectConfig</span>?</div>
+            <div class="code-line">)</div>
+            <div class="code-line">	<span class="keyword">local</span> info = <span class="method">buildInfo</span>(config)</div>
+            <div class="code-line">	<span class="keyword">local</span> original = element.BackgroundTransparency</div>
+            <div class="code-line">	<span class="keyword">return</span> <span class="method">bindHover</span>(element,</div>
+            <div class="code-line">		<span class="keyword">function</span>() <span class="method">playTween</span>(element, info, { BackgroundTransparency = hoverTransparency }) <span class="keyword">end</span>,</div>
+            <div class="code-line">		<span class="keyword">function</span>() <span class="method">playTween</span>(element, info, { BackgroundTransparency = original }) <span class="keyword">end</span></div>
+            <div class="code-line">	)</div>
+            <div class="code-line"><span class="keyword">end</span></div>
+            <div class="code-line"></div>
+            <div class="code-line"><span class="keyword">return</span> UIEffects</div>
+          </div>
+
+          <div class="code-container" id="tab-skinsshop" style="display: none;">
+            <div class="code-line"><span class="comment">--[[</span></div>
+            <div class="code-line"><span class="comment">    SkinsShop</span></div>
+            <div class="code-line"><span class="comment">    Handles skins - crates purchase and equipping</span></div>
+            <div class="code-line"><span class="comment">--]]</span></div>
+            <div class="code-line"></div>
+            <div class="code-line"><span class="keyword">local</span> Players            = <span class="builtin">game</span>:<span class="method">GetService</span>(<span class="string">"Players"</span>)</div>
+            <div class="code-line"><span class="keyword">local</span> ReplicatedStorage  = <span class="builtin">game</span>:<span class="method">GetService</span>(<span class="string">"ReplicatedStorage"</span>)</div>
+            <div class="code-line"><span class="keyword">local</span> ServerStorage      = <span class="builtin">game</span>:<span class="method">GetService</span>(<span class="string">"ServerStorage"</span>)</div>
+            <div class="code-line"></div>
+            <div class="code-line"><span class="comment">------------------- SERVICES --------</span></div>
+            <div class="code-line"></div>
+            <div class="code-line"><span class="keyword">local</span> Events         = ReplicatedStorage:<span class="method">WaitForChild</span>(<span class="string">"Events"</span>)</div>
+            <div class="code-line"><span class="keyword">local</span> SkinsBuyEvent  = Events:<span class="method">WaitForChild</span>(<span class="string">"SkinsBuy"</span>)       :: <span class="type">RemoteEvent</span></div>
+            <div class="code-line"><span class="keyword">local</span> SkinEquipEvent = Events:<span class="method">WaitForChild</span>(<span class="string">"SkinEquip"</span>)      :: <span class="type">RemoteEvent</span></div>
+            <div class="code-line"><span class="keyword">local</span> AnnounceEvent  = Events:<span class="method">WaitForChild</span>(<span class="string">"AnnouncePlayer"</span>) :: <span class="type">RemoteEvent</span></div>
+            <div class="code-line"></div>
+            <div class="code-line"><span class="keyword">local</span> Modules      = ReplicatedStorage:<span class="method">WaitForChild</span>(<span class="string">"Modules"</span>)</div>
+            <div class="code-line"><span class="keyword">local</span> RollModule   = <span class="builtin">require</span>(Modules:<span class="method">WaitForChild</span>(<span class="string">"RollModule"</span>))</div>
+            <div class="code-line"><span class="keyword">local</span> SkinPools    = <span class="builtin">require</span>(Modules:<span class="method">WaitForChild</span>(<span class="string">"SkinsPool"</span>))</div>
+            <div class="code-line"><span class="keyword">local</span> DataManager  = <span class="builtin">require</span>(ServerStorage.Data.DataManager)</div>
+            <div class="code-line"></div>
+            <div class="code-line"><span class="comment">------------------- CONFIG -----------</span></div>
+            <div class="code-line"></div>
+            <div class="code-line"><span class="keyword">local</span> CRATE_PRICES = {</div>
+            <div class="code-line">	BaseMirror = <span class="number">1000</span>,</div>
+            <div class="code-line">}</div>
+            <div class="code-line"></div>
+            <div class="code-line"><span class="keyword">local</span> MIN_ROLL_AMOUNT           = <span class="number">1</span></div>
+            <div class="code-line"><span class="keyword">local</span> MAX_ROLL_AMOUNT           = <span class="number">1000</span></div>
+            <div class="code-line"><span class="keyword">local</span> PURCHASE_COOLDOWN_SECONDS = <span class="number">0.5</span> <span class="comment">-- This way exploiters cant open 1000 crates at once</span></div>
+            <div class="code-line"><span class="keyword">local</span> ANNOUNCE_DURATION_SECONDS = <span class="number">2</span></div>
+            <div class="code-line"></div>
+            <div class="code-line"><span class="comment">---------- PLAYERS COOLDOWN</span></div>
+            <div class="code-line"></div>
+            <div class="code-line"><span class="keyword">local</span> lastPurchaseAt = {}</div>
+            <div class="code-line"></div>
+            <div class="code-line">Players.PlayerRemoving:<span class="method">Connect</span>(<span class="keyword">function</span>(player)</div>
+            <div class="code-line">	lastPurchaseAt[player] = <span class="keyword">nil</span></div>
+            <div class="code-line"><span class="keyword">end</span>)</div>
+            <div class="code-line"></div>
+            <div class="code-line"><span class="comment">---------------- Helping Functions</span></div>
+            <div class="code-line"></div>
+            <div class="code-line"><span class="keyword">local</span> <span class="keyword">function</span> <span class="method">notify</span>(player, message)</div>
+            <div class="code-line">	AnnounceEvent:<span class="method">FireClient</span>(player, message, ANNOUNCE_DURATION_SECONDS)</div>
+            <div class="code-line"><span class="keyword">end</span></div>
+            <div class="code-line"></div>
+            <div class="code-line"><span class="keyword">local</span> <span class="keyword">function</span> <span class="method">sanitizeAmount</span>(raw)</div>
+            <div class="code-line">	<span class="comment">-- rejects invalid input</span></div>
+            <div class="code-line">	<span class="keyword">if</span> <span class="builtin">typeof</span>(raw) ~= <span class="string">"number"</span> <span class="keyword">or</span> raw ~= raw <span class="keyword">then</span></div>
+            <div class="code-line">		<span class="keyword">return</span> MIN_ROLL_AMOUNT</div>
+            <div class="code-line">	<span class="keyword">end</span></div>
+            <div class="code-line">	<span class="keyword">return</span> <span class="builtin">math</span>.<span class="method">clamp</span>(<span class="builtin">math</span>.<span class="method">floor</span>(raw), MIN_ROLL_AMOUNT, MAX_ROLL_AMOUNT)</div>
+            <div class="code-line"><span class="keyword">end</span></div>
+            <div class="code-line"></div>
+            <div class="code-line"><span class="keyword">local</span> <span class="keyword">function</span> <span class="method">isOnCooldown</span>(player)</div>
+            <div class="code-line">	<span class="keyword">local</span> last = lastPurchaseAt[player]</div>
+            <div class="code-line">	<span class="keyword">return</span> last ~= <span class="keyword">nil</span> <span class="keyword">and</span> (<span class="builtin">os</span>.<span class="method">clock</span>() - last) &lt; PURCHASE_COOLDOWN_SECONDS</div>
+            <div class="code-line"><span class="keyword">end</span></div>
+            <div class="code-line"></div>
+            <div class="code-line"><span class="comment">---------- HANDLING PLAYER EQUIPPING</span></div>
+            <div class="code-line"></div>
+            <div class="code-line">SkinEquipEvent.OnServerEvent:<span class="method">Connect</span>(<span class="keyword">function</span>(player, skinName)</div>
+            <div class="code-line">	<span class="keyword">if</span> <span class="builtin">typeof</span>(skinName) ~= <span class="string">"string"</span> <span class="keyword">then</span></div>
+            <div class="code-line">		<span class="keyword">return</span></div>
+            <div class="code-line">	<span class="keyword">end</span></div>
+            <div class="code-line"></div>
+            <div class="code-line">	<span class="keyword">local</span> profile = DataManager.Profiles[player]</div>
+            <div class="code-line">	<span class="keyword">if</span> <span class="keyword">not</span> profile <span class="keyword">then</span></div>
+            <div class="code-line">		<span class="keyword">return</span></div>
+            <div class="code-line">	<span class="keyword">end</span></div>
+            <div class="code-line"></div>
+            <div class="code-line">	<span class="keyword">if</span> <span class="keyword">not</span> <span class="builtin">table</span>.<span class="method">find</span>(profile.Data.OwnedSkins, skinName) <span class="keyword">then</span></div>
+            <div class="code-line">		<span class="method">notify</span>(player, <span class="string">"You don't own this skin."</span>)</div>
+            <div class="code-line">		<span class="keyword">return</span></div>
+            <div class="code-line">	<span class="keyword">end</span></div>
+            <div class="code-line"></div>
+            <div class="code-line">	DataManager:<span class="method">Set</span>(player, <span class="string">"EquippedSkin"</span>, skinName)</div>
+            <div class="code-line"><span class="keyword">end</span>)</div>
+            <div class="code-line"></div>
+            <div class="code-line"><span class="comment">------------- ROLLING FUNCTION</span></div>
+            <div class="code-line"></div>
+            <div class="code-line"><span class="keyword">local</span> <span class="keyword">function</span> <span class="method">buildRewards</span>(pool, rolls, ownedSkins)</div>
+            <div class="code-line">	<span class="keyword">local</span> rewards = {}</div>
+            <div class="code-line"></div>
+            <div class="code-line">	<span class="keyword">for</span> _ = <span class="number">1</span>, rolls <span class="keyword">do</span></div>
+            <div class="code-line">		<span class="keyword">local</span> rolled = RollModule.<span class="method">Roll</span>(pool)</div>
+            <div class="code-line">		<span class="keyword">local</span> entry  = rewards[rolled]</div>
+            <div class="code-line"></div>
+            <div class="code-line">		<span class="keyword">if</span> <span class="keyword">not</span> entry <span class="keyword">then</span></div>
+            <div class="code-line">			entry = {</div>
+            <div class="code-line">				count = <span class="number">0</span>,</div>
+            <div class="code-line">				isNew = <span class="builtin">table</span>.<span class="method">find</span>(ownedSkins, rolled) == <span class="keyword">nil</span>,</div>
+            <div class="code-line">			}</div>
+            <div class="code-line">			rewards[rolled] = entry</div>
+            <div class="code-line">		<span class="keyword">end</span></div>
+            <div class="code-line"></div>
+            <div class="code-line">		entry.count += <span class="number">1</span></div>
+            <div class="code-line">	<span class="keyword">end</span></div>
+            <div class="code-line"></div>
+            <div class="code-line">	<span class="keyword">return</span> rewards</div>
+            <div class="code-line"><span class="keyword">end</span></div>
+            <div class="code-line"></div>
+            <div class="code-line"><span class="comment">-------- HANDLING CRATES PURCHASE</span></div>
+            <div class="code-line"></div>
+            <div class="code-line">SkinsBuyEvent.OnServerEvent:<span class="method">Connect</span>(<span class="keyword">function</span>(player, skinName, amount)</div>
+            <div class="code-line">	<span class="comment">------------------ 1 - GUARD CHECKS</span></div>
+            <div class="code-line">	<span class="keyword">if</span> <span class="builtin">typeof</span>(skinName) ~= <span class="string">"string"</span> <span class="keyword">then</span></div>
+            <div class="code-line">		<span class="keyword">return</span></div>
+            <div class="code-line">	<span class="keyword">end</span></div>
+            <div class="code-line"></div>
+            <div class="code-line">	<span class="keyword">if</span> <span class="method">isOnCooldown</span>(player) <span class="keyword">then</span></div>
+            <div class="code-line">		<span class="keyword">return</span></div>
+            <div class="code-line">	<span class="keyword">end</span></div>
+            <div class="code-line">	lastPurchaseAt[player] = <span class="builtin">os</span>.<span class="method">clock</span>()</div>
+            <div class="code-line"></div>
+            <div class="code-line">	<span class="keyword">local</span> pool      = SkinPools[skinName]</div>
+            <div class="code-line">	<span class="keyword">local</span> unitPrice = CRATE_PRICES[skinName]</div>
+            <div class="code-line">	<span class="keyword">if</span> <span class="keyword">not</span> pool <span class="keyword">or</span> <span class="keyword">not</span> unitPrice <span class="keyword">then</span></div>
+            <div class="code-line">		<span class="keyword">return</span></div>
+            <div class="code-line">	<span class="keyword">end</span></div>
+            <div class="code-line"></div>
+            <div class="code-line">	<span class="keyword">local</span> profile = DataManager.Profiles[player]</div>
+            <div class="code-line">	<span class="keyword">if</span> <span class="keyword">not</span> profile <span class="keyword">then</span></div>
+            <div class="code-line">		<span class="keyword">return</span></div>
+            <div class="code-line">	<span class="keyword">end</span></div>
+            <div class="code-line"></div>
+            <div class="code-line">	<span class="comment">------------------ 2 - CHECKING PRICE</span></div>
+            <div class="code-line">	<span class="keyword">local</span> rollCount = <span class="method">sanitizeAmount</span>(amount)</div>
+            <div class="code-line">	<span class="keyword">local</span> totalCost = unitPrice * rollCount</div>
+            <div class="code-line"></div>
+            <div class="code-line">	<span class="keyword">if</span> profile.Data.Ahn &lt; totalCost <span class="keyword">then</span></div>
+            <div class="code-line">		<span class="method">notify</span>(player, <span class="string">"Not enough Ahn!"</span>)</div>
+            <div class="code-line">		<span class="keyword">return</span></div>
+            <div class="code-line">	<span class="keyword">end</span></div>
+            <div class="code-line"></div>
+            <div class="code-line">	<span class="comment">------------------------- 3 - APPLY CHANGES</span></div>
+            <div class="code-line">	DataManager:<span class="method">Set</span>(player, <span class="string">"Ahn"</span>, profile.Data.Ahn - totalCost)</div>
+            <div class="code-line"></div>
+            <div class="code-line">	<span class="keyword">local</span> rewards = <span class="method">buildRewards</span>(pool, rollCount, profile.Data.OwnedSkins)</div>
+            <div class="code-line"></div>
+            <div class="code-line">	<span class="keyword">local</span> ownedSkins = profile.Data.OwnedSkins</div>
+            <div class="code-line">	<span class="keyword">for</span> name, entry <span class="keyword">in</span> rewards <span class="keyword">do</span></div>
+            <div class="code-line">		<span class="keyword">if</span> entry.isNew <span class="keyword">then</span></div>
+            <div class="code-line">			<span class="builtin">table</span>.<span class="method">insert</span>(ownedSkins, name)</div>
+            <div class="code-line">		<span class="keyword">end</span></div>
+            <div class="code-line">	<span class="keyword">end</span></div>
+            <div class="code-line">	DataManager:<span class="method">Set</span>(player, <span class="string">"OwnedSkins"</span>, ownedSkins)</div>
+            <div class="code-line"></div>
+            <div class="code-line">	<span class="comment">------------------------- 4 - NOTIFY CLIENT (FOR VISUALS)</span></div>
+            <div class="code-line">	SkinsBuyEvent:<span class="method">FireClient</span>(player, rewards)</div>
+            <div class="code-line"><span class="keyword">end</span>)</div>
+          </div>
+
+          <div class="code-container" id="tab-roundmanager" style="display: none;">
+    <div class="code-line"><span class="comment">--[[</span></div>
+    <div class="code-line"><span class="comment">    RoundManager</span></div>
+    <div class="code-line"><span class="comment">    Server-side controller for round-based multiplayer game.</span></div>
+    <div class="code-line"><span class="comment">--]]</span></div>
+    <div class="code-line"></div>
+
+    <div class="code-line"><span class="keyword">local</span> Players = <span class="builtin">game</span>:<span class="method">GetService</span>(<span class="string">"Players"</span>)</div>
+    <div class="code-line"><span class="keyword">local</span> ReplicatedStorage = <span class="builtin">game</span>:<span class="method">GetService</span>(<span class="string">"ReplicatedStorage"</span>)</div>
+    <div class="code-line"></div>
+
+    <div class="code-line"><span class="comment">-------------- SERVICES -------</span></div>
+    <div class="code-line"><span class="keyword">local</span> Modules = ReplicatedStorage:<span class="method">WaitForChild</span>(<span class="string">"Modules"</span>)</div>
+    <div class="code-line"><span class="keyword">local</span> PlayerManager = <span class="builtin">require</span>(Modules:<span class="method">WaitForChild</span>(<span class="string">"PlayerManager"</span>))</div>
+    <div class="code-line"><span class="keyword">local</span> ArenaService = <span class="builtin">require</span>(Modules:<span class="method">WaitForChild</span>(<span class="string">"ArenaService"</span>))</div>
+    <div class="code-line"><span class="keyword">local</span> Config = <span class="builtin">require</span>(script:<span class="method">WaitForChild</span>(<span class="string">"Config"</span>))</div>
+    <div class="code-line"></div>
+
+    <div class="code-line"><span class="comment">---------------- STATIC</span></div>
+    <div class="code-line"><span class="keyword">local</span> Phases = {</div>
+    <div class="code-line">    WAITING = <span class="string">"Waiting"</span>,</div>
+    <div class="code-line">    INTERMISSION = <span class="string">"Intermission"</span>,</div>
+    <div class="code-line">    ROUND = <span class="string">"Round"</span>,</div>
+    <div class="code-line">    ROUND_END = <span class="string">"RoundEnd"</span>,</div>
+    <div class="code-line">}</div>
+    <div class="code-line"></div>
+
+    <div class="code-line"><span class="comment">-------------- HELPERS</span></div>
+    <div class="code-line"><span class="keyword">local</span> <span class="keyword">function</span> <span class="method">setPhase</span>(phase, data)</div>
+    <div class="code-line">    currentPhase = phase</div>
+    <div class="code-line">    PhaseChanged:<span class="method">FireAllClients</span>(phase, data <span class="keyword">or</span> {})</div>
+    <div class="code-line"><span class="keyword">end</span></div>
+    <div class="code-line"></div>
+
+    <div class="code-line"><span class="keyword">local</span> <span class="keyword">function</span> <span class="method">countdown</span>(seconds: <span class="type">number</span>, label: <span class="type">string</span>)</div>
+    <div class="code-line">    <span class="keyword">for</span> remaining = seconds, <span class="number">0</span>, -<span class="number">1</span> <span class="keyword">do</span></div>
+    <div class="code-line">        RoundInfo:<span class="method">FireAllClients</span>(label, remaining)</div>
+    <div class="code-line">        task.<span class="method">wait</span>(<span class="number">1</span>)</div>
+    <div class="code-line">    <span class="keyword">end</span></div>
+    <div class="code-line"><span class="keyword">end</span></div>
+    <div class="code-line"></div>
+
+    <div class="code-line"><span class="comment">----------- ROUND MANAGEMENT</span></div>
+    <div class="code-line"><span class="keyword">local</span> <span class="keyword">function</span> <span class="method">runRound</span>()</div>
+    <div class="code-line">    <span class="keyword">local</span> participants = PlayerManager.<span class="method">GetAllPlayers</span>()</div>
+    <div class="code-line">    <span class="method">setPhase</span>(Phases.ROUND, { playerCount = #participants })</div>
+    <div class="code-line"></div>
+    <div class="code-line">    <span class="keyword">for</span> _, player <span class="keyword">in</span> participants <span class="keyword">do</span></div>
+    <div class="code-line">        player:<span class="method">LoadCharacterAsync</span>()</div>
+    <div class="code-line">    <span class="keyword">end</span></div>
+    <div class="code-line"></div>
+    <div class="code-line">    ArenaService.<span class="method">SpawnInCircle</span>(participants)</div>
+    <div class="code-line">    <span class="method">countdown</span>(Config.ROUND_TIME, <span class="string">"Round"</span>)</div>
+    <div class="code-line"><span class="keyword">end</span></div>
+    <div class="code-line"></div>
+
+    <div class="code-line"><span class="comment">-------------- MAIN LOOP</span></div>
+    <div class="code-line"><span class="keyword">local</span> <span class="keyword">function</span> <span class="method">gameLoop</span>()</div>
+    <div class="code-line">    <span class="keyword">while</span> <span class="keyword">true</span> <span class="keyword">do</span></div>
+    <div class="code-line">        <span class="method">waitForPlayers</span>()</div>
+    <div class="code-line">        <span class="method">runIntermission</span>()</div>
+    <div class="code-line">        <span class="method">runRound</span>()</div>
+    <div class="code-line">        <span class="method">endRound</span>()</div>
+    <div class="code-line">    <span class="keyword">end</span></div>
+    <div class="code-line"><span class="keyword">end</span></div>
+    <div class="code-line"></div>
+
+    <div class="code-line">task.<span class="method">spawn</span>(gameLoop)</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ---------------- HELP SECTION -->
+  <section id="help-section">
+    <div id="help-header">
+      <div id="help-avatar">
+        <img class="help-avatar-img" src="/RoPortfolio/assets/builderman-soccer-qNUkJXFx.png" alt="">
+      </div>
+      <div class="helper-line"></div>
+      <span id="help-title">Questions & Answers</span>
+      <div id="help-lang">🇺🇸 ENGLISH</div>
+    </div>
+
+    <nav id="help-nav">
+      <button class="help-nav-link" id="home-nav">HOME</button>
+      <button class="help-nav-link active" id="answers-nav">ANSWERS</button>
+    </nav>
+
+    <div id="help-body">
+      <div id="help-main">
+
+        <ul id="help-articles">
+          <div class="articles-wrapper">
+            <li class="help-article">
+              <p class="help-article-title">Are you avaliable for long-term collaborations?</p>
+              <div class="help-article-meta">No, I usually dont engage in
+                long-term collaborations. But im open to discuss about it.</div>
+            </li>
+            <li class="help-article">
+              <p class="help-article-title">Do you take percentage/revenue share?</p>
+              <div class="help-article-meta">Ussually no. I take robux or USD. I only take % when the game already has decent CCU. </div>
+            </li>
+            <li class="help-article">
+              <p class="help-article-title">Whats your time zone?</p>
+              <div class="help-article-meta">GMT+2, currently <span id="time"></span></div>
+            </li>
+            <li class="help-article">
+              <p class="help-article-title">Do you actively communicate?</p>
+              <div class="help-article-meta">I do - respond to every ping and read trough messages, but only when im
+                online.</div>
+            </li>
+            <li class="help-article">
+              <p class="help-article-title">Do you use AI?</p>
+              <div class="help-article-meta">I use Actual Imagination.</div>
+            </li>
+          </div>
+        </ul>
+
+        <img src="/RoPortfolio/assets/PlayNow3-DSDnaNNt.png" class="play-now-img" alt="">
+      </div>
+
+      <aside id="help-sidebar">
+        <div class="sidebar-block">
+          <div class="sidebar-header">
+            Contact Me
+          </div>
+          <div class="sidebar-body">
+            <h3 class="contact-info" title="Discord"><img src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20aria-label='Discord'%20role='img'%20viewBox='0%200%20512%20512'%20fill='%237289da'%3e%3crect%20width='512'%20height='512'%20rx='15%25'/%3e%3cpath%20d='m346%20392-21-25c41-11%2057-39%2057-39-52%2049-194%2051-249%200%200%200%2014%2026%2056%2039l-23%2025c-70-1-97-48-97-48%200-104%2046-187%2046-187%2047-33%2090-33%2090-33l3%204c-58%2016-83%2042-83%2042%2068-46%20208-42%20263%200%201-1-33-28-86-42l5-4s43%200%2090%2033c0%200%2046%2083%2046%20187%200%200-27%2047-97%2048z'%20fill='%23fff'/%3e%3cellipse%20cx='196'%20cy='279'%20rx='33'%20ry='35'/%3e%3cellipse%20cx='312'%20cy='279'%20rx='33'%20ry='35'/%3e%3c/svg%3e" alt="" id="discord-icon">
+              kriftik</h3>
+            <h3 class="contact-info" title="Roblox"><img src="/RoPortfolio/assets/Roblox_icon-BvF5nquc.png" alt="" id="roblox-icon">
+              SasukeL1e</h3>
+            <p class="time-text">I'm usually available from <span class="time-span"><span id="time-1">14:00</span> to
+                <span id="time-2">21:00</span></span> (your time)</p>
+          </div>
+        </div>
+
+        <div class="sidebar-block">
+          <div class="sidebar-header">
+            ROBLOX Trivia
+          </div>
+          <div class="sidebar-body">
+            <div id="stat-1"><img src="data:image/png;base64,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" alt="">Roblox is very safe trust</div>
+            <div id="stat-2"><img src="data:image/png;base64,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" alt="">There are around 40+ million games!!</div>
+          </div>
+        </div>
+      </aside>
+    </div><!-- --------------- Q&A SECTION -->
+  </section>
+
+  </div><!-- --------  PAGE WRAPPER--------------------->
+
+  <footer id="copyright-footer"
+    style="text-align: center; padding: 30px 15px; color: #777; font-size: 0.85rem; border-top: 1px solid #333; line-height: 1.5;">
+    © 2026 Kriftik. All Rights Reserved.
+  </footer>
+
+
+  <!----------------------------- WINDOWS SCRIPT IMPORT -->
+
+</body>
+
+</html>
